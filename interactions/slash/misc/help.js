@@ -18,12 +18,12 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName("help")
 		.setDescription(
-			"List all commands of bot or info about a specific command."
+			"Liste toutes les commandes du bot ou une info par rapport à une commande specifique"
 		)
 		.addStringOption((option) =>
 			option
 				.setName("command")
-				.setDescription("The specific command to see the info of.")
+				.setDescription("Connaitre les infos specifiques à la commande")
 		),
 
 	async execute(interaction) {
