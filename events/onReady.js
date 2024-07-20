@@ -5,7 +5,7 @@
  * @version 3.2.2
  */
 
-const { Events } = require("discord.js");
+const { Events, ActivityType } = require("discord.js");
 
 module.exports = {
 	name: Events.ClientReady,
@@ -17,16 +17,7 @@ module.exports = {
 	 */
 	async execute(client) {
 		console.log(`Ready! Logged in as ${client.user.tag}`);
-
-		try {
-			// Set the bot's status
-			await client.user.setPresence({
-				activities: [{ name: 'fait maison', type: 'PLAYING' }],
-				status: 'online',
-			});
-			console.log("Bot status set to 'fait maison'");
-		} catch (error) {
-			console.error("Error setting bot status:", error);
-		}
+		client.user.setStatus('idle');
+		client.user.setActivity('rien', { type: ActivityType.Playing });
 	},
 };
