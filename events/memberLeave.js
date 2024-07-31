@@ -12,7 +12,7 @@ module.exports = {
         }
 
         const embed = new EmbedBuilder()
-            .setColor('#e74c3c')
+            .setColor('Orange')
             .setTitle('Membre parti')
             .setDescription(`${member.user.tag} a quitté le serveur.`)
             .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))

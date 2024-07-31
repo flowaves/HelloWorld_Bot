@@ -9,7 +9,7 @@ module.exports = {
         const client = interaction.client;
 
         const botInfoEmbed = new EmbedBuilder()
-            .setColor('RANDOM')
+            .setColor('#0294E1')
             .setTitle(`Informations sur ${client.user.username}`)
             .setDescription(`Bot créé le ${client.user.createdAt.toLocaleDateString()}`)
             .addFields(

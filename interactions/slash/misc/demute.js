@@ -33,7 +33,7 @@ module.exports = {
             try {
                 await member.voice.setMute(false, reason);
                 const unmuteEmbed = new EmbedBuilder()
-                    .setColor("Green")
+                    .setColor("Red")
                     .setTitle("Utilisateur réactivé")
                     .setDescription(`**${user.tag}** a été réactivé.`)
                     .addFields({ name: "Raison", value: reason });

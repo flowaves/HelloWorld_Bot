@@ -33,7 +33,7 @@ module.exports = {
             try {
                 await member.kick(reason);
                 const kickEmbed = new EmbedBuilder()
-                    .setColor("Orange")
+                    .setColor("Red")
                     .setTitle("Utilisateur expulsé")
                     .setDescription(`**${user.tag}** a été expulsé du serveur.`)
                     .addFields({ name: "Raison", value: reason });

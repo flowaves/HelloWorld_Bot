@@ -33,7 +33,7 @@ module.exports = {
             try {
                 await member.voice.setMute(true, reason);
                 const muteEmbed = new EmbedBuilder()
-                    .setColor("Yellow")
+                    .setColor("Red")
                     .setTitle("Utilisateur rendu muet")
                     .setDescription(`**${user.tag}** a été rendu muet.`)
                     .addFields({ name: "Raison", value: reason });

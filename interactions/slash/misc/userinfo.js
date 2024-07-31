@@ -16,7 +16,7 @@ module.exports = {
         const member = await interaction.guild.members.fetch(user.id);
 
         const embed = new EmbedBuilder()
-            .setColor("Random")
+            .setColor('#0294E1')
             .setTitle(`Informations sur ${user.tag}`)
             .setThumbnail(user.avatarURL())
             .addFields(

@@ -22,7 +22,7 @@ module.exports = {
         const description = interaction.options.getString("description");
 
         const embed = new EmbedBuilder()
-            .setColor("Random")
+            .setColor('#0294E1')
             .setTitle(title)
             .setDescription(description);
 
