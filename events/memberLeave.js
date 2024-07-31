@@ -3,7 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 module.exports = {
     name: 'guildMemberRemove',
     execute(member) {
-        const logChannelId = '1167200840155660412'; 
+        const logChannelId = '1264122099845566474'; 
         const logChannel = member.guild.channels.cache.get(logChannelId);
 
         if (!logChannel) {

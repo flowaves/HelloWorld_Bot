@@ -9,7 +9,7 @@ module.exports = {
         const guild = interaction.guild;
 
         const serverInfoEmbed = new EmbedBuilder()
-            .setColor('RANDOM')
+            .setColor('#ffff')
             .setTitle(`Informations sur le serveur ${guild.name}`)
             .setDescription(`Serveur créé le ${guild.createdAt.toLocaleDateString()}`)
             .addFields(
